@@ -1,0 +1,12 @@
+[package]
+name = "ecdh_x25519"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+x25519-dalek = "2"
+pyo3 = { version = "0.25", features = ["extension-module"] }
+rand = "0.8"
